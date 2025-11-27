@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensores - Tienda</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Banner/Nav -->
+    <header class="banner">
+        <h2>Sistema de Sensores</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sensores.html">Sensores</a>
+        </nav>
+    </header>
+
+    <h1>Tienda de Sensores</h1>
+
+    <div class="contenedor">
+        <div class="tarjeta">
+            <img src="static/NTC10K.webp" alt="NTC 10K" />
+            <h3>Sensor NTC 10K</h3>
+            <p>Precio: $5.000</p>
+            <button class="btn" onclick="agregar('NTC 10K', 5000)">Agregar</button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="static/DHT11.webp" alt="DHT11" />
+            <h3>Sensor DHT11</h3>
+            <p>Precio: $12.000</p>
+            <button class="btn" onclick="agregar('DHT11', 12000)">Agregar</button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="static/HCSENSOR.webp" alt="Ultrasonido" />
+            <h3>Sensor Ultrasonido HC-SR04</h3>
+            <p>Precio: $18.000</p>
+            <button class="btn" onclick="agregar('HC-SR04', 18000)">Agregar</button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="/static/MQ2.webp" alt="MQ-2" />
+            <h3>Sensor MQ-2</h3>
+            <p>Precio: $15.000</p>
+            <button class="btn" onclick="agregar('MQ-2', 15000)">Agregar</button>
+        </div>
+    </div>
+
+    <div id="recibo">
+        <h2>Recibo de Compra</h2>
+        <ul id="lista"></ul>
+        <h3 id="total"></h3>
+
+        <button class="btn borrar" onclick="borrarLista()">Borrar Recibo</button>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

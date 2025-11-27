@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensores & Componentes – Tienda</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
+</head>
+<body>
+
+    <!-- Banner / Navbar -->
+    <header class="navbar">
+        <h1>ElectroStore</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="extra.html">Extra</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Buscar Componentes</h2>
+
+        <!-- Buscador -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar: resistor, STM32, sensor, etc...">
+            <button onclick="buscarComponentes()">Buscar</button>
+        </div>
+
+        <!-- Contenedor de tarjetas -->
+        <div id="componentes" class="card-container"></div>
+
+        <!-- Recibo -->
+        <section class="receipt">
+            <h3>🧾 Recibo de compra</h3>
+            <div id="lista"></div>
+
+            <button onclick="borrarLista()" class="delete-btn">Borrar Recibo</button>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
